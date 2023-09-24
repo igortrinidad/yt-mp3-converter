@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YTD - Clean and fast download</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+</head>
+
+<body>
+
+  <header class="bg-cyan-500 p-4">
+    <h2 class="text-3xl text-center font-light text-white m-0">YTD - Clean and fast download</h2>
+  </header>
+  
+  <div class="w-full flex justify-center p-8">
+    <main class="max-w-3xl w-full flex border">
+  
+      <form class="w-full flex" action="{{ url_for('download_mp3.download_mp3') }}" method="POST">
+        <input type="text" name="video_url" placeholder="Enter URL to download" class="border-2 border-gray-700 w-4/5 py-3 px-4"></input>
+        <button class="w-1/5 bg-blue-700 text-xl hover:bg-blue-500 text-white py-2 px-3">Download</button>
+      </form>
+  
+    </main>
+  </div>
+
+
+</body>
+
+</html>

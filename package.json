@@ -1,0 +1,24 @@
+{
+  "name": "yt-mp3-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:tailwind": "npx tailwindcss -i ./static/src/styles.css -o static/css/main.css --watch",
+    "build:tailwind": "npx tailwindcss -i ./static/src/styles.css -o static/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igortrinidad/yt-mp3-converter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igortrinidad/yt-mp3-converter/issues"
+  },
+  "homepage": "https://github.com/igortrinidad/yt-mp3-converter#readme",
+  "dependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
