@@ -29,7 +29,7 @@ def download_mp3():
 
     stream.download(output_path='tmp/mp3', filename = filename_with_timestamp)
 
-    file_name_to_download = sanitize_filename(f'{ video_title }.mp3')
+    file_name_to_download = f'{ sanitize_filename(video_title) }.mp3'
 
     response = send_file(mp3_path, as_attachment=True, download_name = file_name_to_download)
 
